@@ -1,0 +1,60 @@
+@import "../../../styles/variables";
+
+.dropdown-menu {
+    max-width: 50px;
+    min-width: 100px;
+    width: 100px !important;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    margin-left: 96px;
+
+}
+
+.inp {
+    height: 23px;
+    font-size: 12px;
+    width: 90px;
+    font-style: italic;
+}
+
+.btnCat:hover {
+    color: $mainColor;
+}
+
+.btnCat {
+    font-family: $fontFamily;
+    font-weight: 300;
+    font-size: 13px;
+    border-width: 1px;
+    border-radius: 0px;
+    height: 23px;
+}
+
+.btnFind {
+    margin-top: 7px;
+    width: 42px;
+    height: 22px;
+    font-size: 9px;
+    color: white;
+    background-color: rgb(183, 60, 7);
+    border: none;
+}
+
+select {
+    font-size: 13px !important;
+    font-family: $fontFamily !important;
+    font-weight: 300 !important;
+    color: $mainColor !important;
+}
