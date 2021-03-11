@@ -1,0 +1,68 @@
+@import "./variables";
+
+.about {
+  margin-top: -36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--clr-grey-light);
+  color: $mainColor;
+}
+
+h5 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: var(--clr-orange-dark);
+}
+
+.card-deck {
+  flex-direction: column;
+  margin-top: 3.5rem;
+  width: 100vw;
+}
+
+.card {
+  width: 35%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 0.2rem;
+  border: 2px solid black;
+  z-index: -1;
+}
+
+.card:hover {
+  background: var(--clr-orange-light);
+  opacity: 0.7;
+  cursor: pointer;
+  color: var(--clr-white);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.card-title {
+  font-family: $fontFamily;
+  margin-top: 0.8rem;
+}
+
+.card-title span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+
+.card-text {
+  font-family: $fontFamily;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.icons {
+  margin-top: auto;
+  font-size: 2rem;
+}

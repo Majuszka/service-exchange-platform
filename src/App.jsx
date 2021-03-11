@@ -2,8 +2,10 @@
 //import "bootstrap/dist/css/bootstrap.min.css";
 //import { Dropdowns } from "react-bootstrap";
 //import useMediaQuery from '@material-ui/core/useMediaQuery'
+//npm install node-sass --save
+
 import React from "react";
-import Header from "./Components/Header/Header";
+import Header from "./Components/Header";
 import Main from "./Components/Main";
 import BackgroundSlideshow from "react-background-slideshow";
 import Image2 from "./Components/img/priscilla-du-preez.jpg";
@@ -16,9 +18,10 @@ import Footer from "./Components/Footer";
 import Login from "./Components/userAccount/Login";
 import Register from "./Components/userAccount/Register";
 import ResetPW from "./Components/userAccount/ResetPW";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import "./App.scss";
+import "./styles/App.scss";
 
 /* import "bootstrap/dist/css/bootstrap.min.css"; */
 /* import { Dropdowns } from "react-bootstrap"; */ /* import useMediaQuery from '@material-ui/core/useMediaQuery';

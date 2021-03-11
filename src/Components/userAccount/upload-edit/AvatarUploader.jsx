@@ -2,8 +2,8 @@
 //npm i react-avatar-edit
 
 //import React, { Component } from 'react'
-import React from 'react'
-import Avatar from 'react-avatar-edit'
+import React from "react";
+import Avatar from "react-avatar-edit";
 
 export const AvatarUploader = (props) => {
   // const [preview, setPreview] = useState("");
@@ -26,30 +26,32 @@ export const AvatarUploader = (props) => {
   //     e.target.value="";
   //   }
   // }
-  
+
   return (
     <>
-       <div>
+      <div>
         <Avatar
-          width={ 500 }
-          height={ 400 }
-          onCrop={ props.onCrop }
-          onClose={ props.onClose }
-          onBeforeFileLoad={ props.onBeforeFileLoad }
+          width={500}
+          height={400}
+          onCrop={props.onCrop}
+          onClose={props.onClose}
+          onBeforeFileLoad={props.onBeforeFileLoad}
           // src={this.state.src}
         />
-        {props.preview ? <img src={ props.preview} alt="Preview" /> : null}
-        {props.savedImage ? <img src={ props.savedImage} alt="savedImages" /> : null}
+        {props.preview ? <img src={props.preview} alt="Preview" /> : null}
+        {props.savedImage ? (
+          <img src={props.savedImage} alt="savedImages" />
+        ) : null}
       </div>
     </>
-  )
-}
+  );
+};
 
 // class AvatarUploader extends Component {
- 
+
 //   constructor(props) {
 //     super(props)
-//     const src = 
+//     const src =
 //     this.state = {
 //       preview: null,
 //       savedImage: null,
@@ -59,22 +61,22 @@ export const AvatarUploader = (props) => {
 //     this.onClose = this.onClose.bind(this)
 //     this.onBeforeFileLoad = this.onBeforeFileLoad.bind(this)
 //   }
-  
+
 //   onClose() {
 //     this.setState({preview: null,savedImage:this.state.preview})
 //   }
-  
+
 //   onCrop(preview) {
 //     this.setState({preview})
 //   }
- 
+
 //   onBeforeFileLoad(e) {
 //     if(e.target.files[0].size > 71680){
 //       alert("File is too big!");
 //       e.target.value = "";
 //     };
 //   }
-  
+
 //   render () {
 //     return (
 //       <div>
@@ -93,4 +95,4 @@ export const AvatarUploader = (props) => {
 //   }
 // }
 
-export default AvatarUploader
+export default AvatarUploader;

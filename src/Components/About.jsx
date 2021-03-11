@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section.scss";
+import "../styles/Section.scss";
 import { Card, CardDeck } from "react-bootstrap";
 import { FaRegCompass, FaMedapps } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";

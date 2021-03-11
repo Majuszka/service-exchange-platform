@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.scss";
+import "../styles/Main.scss";
 import Logo from "./img/two-way-cross.png";
 
 function Main() {

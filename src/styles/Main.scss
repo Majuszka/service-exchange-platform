@@ -1,0 +1,60 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.main {
+  margin-top: 128px;
+  @include flexCenter(column, rgba(255, 255, 255, 0))
+}
+
+h1 {
+
+  font-family: $fontFamily;
+  font-style: normal;
+  color: white;
+  font-size: 361% !important;
+}
+
+.home {
+  margin-top: 13px;
+}
+
+h1::after {
+  content: "";
+  border: 1px solid white;
+  display: block;
+}
+
+.logo {
+  width: 61px;
+  height: auto;
+}
+
+.main p {
+  font-weight: 400;
+  font-family: $fontFamily;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-text p {
+  font-family: $fontFamily;
+  color: $mainColor;
+  font-size: 25px;
+  text-align: center;
+}
+
+.btnJoinFind {
+  width: 42px;
+  height: 22px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(183, 60, 7);
+  border: none;
+  margin-top: -1px;
+}
+
+.btnJoin:hover {
+  color: #272727;
+}
